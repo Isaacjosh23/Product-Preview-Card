@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fraunces", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream);
+  margin-top: 8rem;
+}
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-category {
+  letter-spacing: 4px;
+}
+
+.details {
+  padding: 2.5rem;
+}
+
+.btn {
+  padding: 1rem 0;
+  transition: all 0.4s;
+}
+
+@media (max-width: 40rem) {
+  .product-card {
+    margin-bottom: 4rem;
+  }
+
+  body {
+    margin-top: 4rem;
+  }
+}
